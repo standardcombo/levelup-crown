@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3762730359405328354
+  Name: "Magic Light Heal Revive Choir Spell Cast 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_magic_light_heal_revive_spell_cast_01_Cue_ref"
+  }
+}
+Assets {
   Id: 2954037056948186721
   Name: "Pipe - Thin"
   PlatformAssetType: 1

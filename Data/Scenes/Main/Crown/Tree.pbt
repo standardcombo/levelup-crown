@@ -7,6 +7,7 @@ Objects {
     Location {
     }
     Rotation {
+      Yaw: 3.07358423e-05
     }
     Scale {
       X: 1
@@ -17,6 +18,7 @@ Objects {
   ParentId: 11039921681813037118
   ChildIds: 18104644928490191707
   ChildIds: 12831382475690333090
+  ChildIds: 16873066999626663814
   ChildIds: 1880605331748314078
   ChildIds: 3608908768960183995
   ChildIds: 12603199545797867998
@@ -532,6 +534,46 @@ Objects {
   }
 }
 Objects {
+  Id: 16873066999626663814
+  Name: "Magic Light Heal Revive Choir Spell Cast 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 3.25688781e-12
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9603051622199093603
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 3762730359405328354
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
   Id: 12831382475690333090
   Name: "Level Up VFX"
   Transform {
@@ -612,6 +654,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:LevelUpSFX"
+      ObjectReference {
+        SelfId: 16873066999626663814
+      }
+    }
+    Overrides {
       Name: "cs:PointLight"
       ObjectReference {
         SelfId: 1880605331748314078
@@ -670,7 +718,7 @@ Objects {
     Location {
     }
     Rotation {
-      Yaw: -77.4122467
+      Yaw: -77.4121552
     }
     Scale {
       X: 0.819830954
@@ -3249,12 +3297,12 @@ Objects {
   Name: "World Text"
   Transform {
     Location {
-      X: -7.67041
-      Y: 32.6617432
+      X: -7.6704278
+      Y: 32.6617393
       Z: 9.85907
     }
     Rotation {
-      Yaw: 103.570168
+      Yaw: 103.570221
     }
     Scale {
       X: 0.963516712
@@ -3303,11 +3351,9 @@ Objects {
   Name: "LevelUpCrown_Server"
   Transform {
     Location {
-      X: 4818.02881
-      Y: -453.179871
-      Z: -1004.77472
     }
     Rotation {
+      Yaw: 3.07358423e-05
     }
     Scale {
       X: 1

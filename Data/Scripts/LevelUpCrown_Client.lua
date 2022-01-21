@@ -2,6 +2,7 @@
 local UIBUTTON = script:GetCustomProperty("UIButton"):WaitForObject()
 local WORLD_TEXT = script:GetCustomProperty("WorldText"):WaitForObject()
 local LEVEL_UP_VFX = script:GetCustomProperty("LevelUpVFX"):WaitForObject()
+local LEVEL_UP_SFX = script:GetCustomProperty("LevelUpSFX"):WaitForObject()
 local POINT_LIGHT = script:GetCustomProperty("PointLight"):WaitForObject()
 local EMBER_VOLUME_VFX = script:GetCustomProperty("EmberVolumeVFX"):WaitForObject()
 local CANDLE_FLAME_VFX = script:GetCustomProperty("CandleFlameVFX"):WaitForObject()
@@ -15,7 +16,7 @@ UI.SetCursorVisible(true)
 UI.SetCanCursorInteractWithUI(true)
 
 
-function Tick()
+function Tick(deltaTime)
 	local level = tonumber(WORLD_TEXT.text)
 	if level <= 1 then
 		POINT_LIGHT.visibility = Visibility.FORCE_OFF
@@ -54,6 +55,9 @@ UIBUTTON.clickedEvent:Connect(function()
 	
 	LEVEL_UP_VFX:Stop()
 	LEVEL_UP_VFX:Play()
+	
+	LEVEL_UP_SFX:Stop()
+	LEVEL_UP_SFX:Play()
 end)
 
 Game.GetLocalPlayer().bindingPressedEvent:Connect(function(_, action)

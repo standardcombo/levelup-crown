@@ -189,10 +189,6 @@ Objects {
       IsSlideEnabled: true
       IsCrouchEnabled: true
       IsJumpEnabled: true
-      CanMoveForward: true
-      CanMoveBackward: true
-      CanMoveLeft: true
-      CanMoveRight: true
       AbilityAimMode {
         Value: "mc:eabilityaimmode:viewrelative"
       }
@@ -250,6 +246,48 @@ Objects {
   }
 }
 Objects {
+  Id: 8967110430365830275
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 3290.68604
+      Y: 4164.08447
+      Z: 168.587036
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6824699100582592933
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+    SpawnEffectsTemplate {
+      Id: 841534158063459245
+    }
+    ShouldDecrowdPlayers: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
   Id: 14202407165094723780
   Name: "Spawn Settings"
   Transform {
@@ -282,6 +320,7 @@ Objects {
       RespawnMode_v2 {
         Value: "mc:erespawnmode:random"
       }
+      StartSpawned: true
       SpawnMode {
         Value: "mc:espawnmode:random"
       }
