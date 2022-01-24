@@ -1,6 +1,8 @@
 
 local UIBUTTON = script:GetCustomProperty("UIButton"):WaitForObject()
 local WORLD_TEXT = script:GetCustomProperty("WorldText"):WaitForObject()
+local MINT_BEGIN_VFX = script:GetCustomProperty("MintBeginVFX"):WaitForObject()
+local MAGIC_CIRCLE = script:GetCustomProperty("MagicCircle"):WaitForObject()
 local LEVEL_UP_VFX = script:GetCustomProperty("LevelUpVFX"):WaitForObject()
 local LEVEL_UP_SFX = script:GetCustomProperty("LevelUpSFX"):WaitForObject()
 local BASE_GEO = script:GetCustomProperty("BaseGeo"):WaitForObject()
@@ -9,6 +11,8 @@ local EMBER_VOLUME_VFX = script:GetCustomProperty("EmberVolumeVFX"):WaitForObjec
 local CANDLE_FLAME_VFX = script:GetCustomProperty("CandleFlameVFX"):WaitForObject()
 local ENERGY_CHARGE_UP_HOLD_VFX = script:GetCustomProperty("EnergyChargeUpHoldVFX"):WaitForObject()
 local EXPLOSION_KIT_FIRE_RING_VFX = script:GetCustomProperty("ExplosionKitFireRingVFX"):WaitForObject()
+local CUSTOM_PROGRESS_BAR_ROOT = script:GetCustomProperty("CustomProgressBarRoot"):WaitForObject()
+local CUSTOM_PROGRESS_BAR_SCRIPT = script:GetCustomProperty("CustomProgressBarScript"):WaitForObject()
 
 local MAX_INTENSITY = POINT_LIGHT.intensity
 local FREQUENCY = 2
@@ -16,10 +20,26 @@ local FREQUENCY = 2
 UI.SetCursorVisible(true)
 UI.SetCanCursorInteractWithUI(true)
 
+local level = 0
+local isWaitingMint = false
+local elapsedMintTime = 0
+
 
 function Tick(deltaTime)
-	local level = 0
+	if isWaitingMint then
+		elapsedMintTime = elapsedMintTime + deltaTime
+		CUSTOM_PROGRESS_BAR_SCRIPT.context.SetPercent(elapsedMintTime / 50)
+	end
+	
 	if WORLD_TEXT.text ~= "" then
+		if isWaitingMint then
+			isWaitingMint = false
+			MAGIC_CIRCLE.visibility = Visibility.FORCE_OFF
+			UIBUTTON.visibility = Visibility.INHERIT
+			CUSTOM_PROGRESS_BAR_ROOT.visibility = Visibility.FORCE_OFF
+			PlayLevelUpVFX()
+			Task.Wait(0.1)
+		end
 		level = tonumber(WORLD_TEXT.text)
 	end
 	
@@ -63,15 +83,40 @@ function Tick(deltaTime)
 	end
 end
 
+Events.Connect("CancelMint", function()
+	isWaitingMint = false
+	MAGIC_CIRCLE.visibility = Visibility.FORCE_OFF
+	UIBUTTON.visibility = Visibility.INHERIT
+	CUSTOM_PROGRESS_BAR_ROOT.visibility = Visibility.FORCE_OFF
+end)
+
 UIBUTTON.clickedEvent:Connect(function()
-	Events.BroadcastToServer("LevelUp")
-	
+	if level == 0 then
+		Events.BroadcastToServer("Mint")
+		
+		isWaitingMint = true
+		
+		UIBUTTON.visibility = Visibility.FORCE_OFF
+		CUSTOM_PROGRESS_BAR_ROOT.visibility = Visibility.INHERIT
+		
+		MINT_BEGIN_VFX:Play()
+		LEVEL_UP_SFX:Play()
+		
+		Task.Wait(0.2)
+		MAGIC_CIRCLE.visibility = Visibility.INHERIT
+	else
+		Events.BroadcastToServer("LevelUp")
+		
+		PlayLevelUpVFX()
+	end
+end)
+function PlayLevelUpVFX()
 	LEVEL_UP_VFX:Stop()
 	LEVEL_UP_VFX:Play()
 	
 	LEVEL_UP_SFX:Stop()
 	LEVEL_UP_SFX:Play()
-end)
+end
 
 Game.GetLocalPlayer().bindingPressedEvent:Connect(function(_, action)
 	-- Hide UI by pressing zero key

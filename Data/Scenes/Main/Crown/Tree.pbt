@@ -17,6 +17,8 @@ Objects {
   }
   ParentId: 11039921681813037118
   ChildIds: 18104644928490191707
+  ChildIds: 18309975574266712336
+  ChildIds: 3064987450868871983
   ChildIds: 12831382475690333090
   ChildIds: 16873066999626663814
   ChildIds: 1880605331748314078
@@ -60,6 +62,7 @@ Objects {
   }
   ParentId: 9603051622199093603
   ChildIds: 9967403353841173645
+  ChildIds: 3906021298985486441
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -102,6 +105,1024 @@ Objects {
         }
       }
     }
+  }
+}
+Objects {
+  Id: 3906021298985486441
+  Name: "Custom Progress Bar"
+  Transform {
+    Location {
+      X: 4818.02881
+      Y: -453.179901
+      Z: -1004.77472
+    }
+    Rotation {
+      Yaw: -2.18263594e-07
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9553249474592504020
+  ChildIds: 5050298967462967475
+  ChildIds: 14960004914004001096
+  ChildIds: 12858472279916532149
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 400
+    Height: 24
+    UIY: -206.880371
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 12858472279916532149
+  Name: "Fill"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3906021298985486441
+  ChildIds: 13120191440627766691
+  ChildIds: 1027244596429788594
+  ChildIds: 9598499384148864161
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentHeight: true
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 9598499384148864161
+  Name: "Right"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12858472279916532149
+  ChildIds: 11552024205438276419
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 12
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentHeight: true
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 11552024205438276419
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9598499384148864161
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 24
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 5637101282571937270
+      }
+      Color {
+        R: 1
+        G: 0.219999969
+        B: 0.544999838
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      ScreenshotIndex: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 1027244596429788594
+  Name: "Left"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12858472279916532149
+  ChildIds: 3102187624011531031
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 12
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentHeight: true
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 3102187624011531031
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1027244596429788594
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 24
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 5637101282571937270
+      }
+      Color {
+        R: 1
+        G: 0.219999969
+        B: 0.544999838
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      ScreenshotIndex: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 13120191440627766691
+  Name: "Center"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12858472279916532149
+  ChildIds: 8528543168105463913
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -24
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 8528543168105463913
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13120191440627766691
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 18340030779138157511
+      }
+      Color {
+        R: 1
+        G: 0.219999969
+        B: 0.544999838
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      ScreenshotIndex: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 14960004914004001096
+  Name: "BG"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3906021298985486441
+  ChildIds: 1695476955327969923
+  ChildIds: 130612335258874408
+  ChildIds: 5580463346371138297
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 500
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 5580463346371138297
+  Name: "Right"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14960004914004001096
+  ChildIds: 6482772204192371076
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 12
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentHeight: true
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 6482772204192371076
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5580463346371138297
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 24
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 5637101282571937270
+      }
+      Color {
+        R: 0.3
+        G: 1
+        B: 0.944370866
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      FlipVertical: true
+      ScreenshotIndex: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 130612335258874408
+  Name: "Left"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14960004914004001096
+  ChildIds: 13327738813294519284
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 12
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentHeight: true
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 13327738813294519284
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 130612335258874408
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 24
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 5637101282571937270
+      }
+      Color {
+        R: 0.3
+        G: 1
+        B: 0.944370866
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      FlipVertical: true
+      ScreenshotIndex: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 1695476955327969923
+  Name: "Center"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14960004914004001096
+  ChildIds: 10341908531666345640
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -24
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 10341908531666345640
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1695476955327969923
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 18340030779138157511
+      }
+      Color {
+        R: 0.3
+        G: 1
+        B: 0.944370866
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      FlipVertical: true
+      ScreenshotIndex: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 5050298967462967475
+  Name: "CustomProgressBar"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 2.54444361e-14
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3906021298985486441
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Fill"
+      ObjectReference {
+        SelfId: 12858472279916532149
+      }
+    }
+    Overrides {
+      Name: "cs:Percent"
+      Float: 0
+    }
+    Overrides {
+      Name: "cs:MinWidth"
+      Int: 24
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7924836921905008663
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -275,7 +1296,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3202,6 +4223,4157 @@ Objects {
   }
 }
 Objects {
+  Id: 3064987450868871983
+  Name: "MCG: Fantasy - Outer Ring Inner"
+  Transform {
+    Location {
+      X: -1.22314453
+      Y: -10.123291
+      Z: 8.67205811
+    }
+    Rotation {
+      Yaw: 3.25688781e-12
+    }
+    Scale {
+      X: 0.49825713
+      Y: 0.49825713
+      Z: 0.49825713
+    }
+  }
+  ParentId: 9603051622199093603
+  ChildIds: 15767330265907232283
+  ChildIds: 12836916779231527744
+  ChildIds: 15702800132505489260
+  ChildIds: 16953141226149833343
+  ChildIds: 6316798190875224572
+  ChildIds: 16142718892801381898
+  ChildIds: 4613642303990035036
+  ChildIds: 13063508612097309952
+  ChildIds: 13740054036556143703
+  ChildIds: 10903212298538578925
+  ChildIds: 11910872238644179371
+  ChildIds: 9865410280273010308
+  ChildIds: 15349866399602048678
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Information"
+      String: "See tool-tip for information. "
+    }
+    Overrides {
+      Name: "bp:Element Type"
+      Enum {
+        Value: "mc:emcshapes:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Top Color"
+      Color {
+        G: 0.219867185
+        B: 0.830000043
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Middle Color"
+      Color {
+        G: 0.738741636
+        B: 0.97
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bottom Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Offset Top"
+      Float: 0.570502758
+    }
+    Overrides {
+      Name: "bp:Color Offset Middle"
+      Float: 0.757915854
+    }
+    Overrides {
+      Name: "bp:Color Offset Bottom"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive"
+      Float: 12.5750904
+    }
+    Overrides {
+      Name: "bp:Border Edge Fade"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions U"
+      Float: 6
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scale"
+      Float: 0.922573864
+    }
+    Overrides {
+      Name: "bp:Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation"
+      Float: 45
+    }
+    Overrides {
+      Name: "bp:Element Rotation Axis"
+      Enum {
+        Value: "mc:emcrotationaxis:2"
+      }
+    }
+    Overrides {
+      Name: "bp:Offset Rotation"
+      Float: -0
+    }
+    Overrides {
+      Name: "bp:Width +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Height +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Distance +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Random Seed Value"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Circle Thickness"
+      Float: -15.4791641
+    }
+    Overrides {
+      Name: "bp:Fade Start"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Softness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Initial Start Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed"
+      Float: -0.051179
+    }
+    Overrides {
+      Name: "bp:Fade Axis"
+      Enum {
+        Value: "mc:emcfadeaxisxy:29"
+      }
+    }
+    Overrides {
+      Name: "bp:Fade Point Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Fade Style"
+      Enum {
+        Value: "mc:emcfadestyle:30"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Shape"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Element B Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator1"
+      }
+    }
+    Overrides {
+      Name: "bp:Element B Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Dual Texture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Alternate Blend"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element Blend"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Alpha Blending"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip U"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip V"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scroll Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Scroll Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Outline"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Outline Thickness"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "bp:Sort Priority"
+      Int: -10
+    }
+    Overrides {
+      Name: "bp:Shape Thickness"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Keystone"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Keystone Top"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Coloring Method"
+      Enum {
+        Value: "mc:emccoloringmethod:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Element Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Element Rotation Animation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Use Element Local Orientation"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Center Element Pivot"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Reset On Play"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Reset On Stop"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4204935042848427516
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 15349866399602048678
+  Name: "Hand Cast VFX"
+  Transform {
+    Location {
+      X: 0.908439934
+      Y: 4.3617
+      Z: 92.7574
+    }
+    Rotation {
+    }
+    Scale {
+      X: 4.41988754
+      Y: 4.41988754
+      Z: 4.41988754
+    }
+  }
+  ParentId: 3064987450868871983
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Enable Plasma Ball"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enable Flares"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enable Energy Swirl"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3360604785460599381
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 9865410280273010308
+  Name: "GlowLight"
+  Transform {
+    Location {
+      Z: 1.9454385
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.389087826
+      Y: 0.389087826
+      Z: 0.389087826
+    }
+  }
+  ParentId: 3064987450868871983
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Light {
+    Intensity: 14.7592993
+    Color {
+      R: 0.919999957
+      B: 0.536666334
+      A: 1
+    }
+    CastShadows: true
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      UseTemperature: true
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+    CastVolumetricShadows: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 11910872238644179371
+  Name: "Level Up VFX"
+  Transform {
+    Location {
+      Z: 1.9454385
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.560286224
+      Y: 0.560286224
+      Z: 0.560286224
+    }
+  }
+  ParentId: 3064987450868871983
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Local Space"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Ground Element Color"
+      Color {
+        R: 0.0871523544
+        B: 0.940000057
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Spiral Color"
+      Color {
+        R: 0.265165716
+        B: 0.909999967
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.391324818
+        G: 0.0899999738
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 161941836213610146
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 10903212298538578925
+  Name: "MCG: Fantasy - Singular Element Wings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.350000083
+      Y: 0.350000083
+      Z: 0.350000083
+    }
+  }
+  ParentId: 3064987450868871983
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Information"
+      String: "See tool-tip for information. "
+    }
+    Overrides {
+      Name: "bp:Element Type"
+      Enum {
+        Value: "mc:emcshapes:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Top Color"
+      Color {
+        G: 0.231522992
+        B: 0.76
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Middle Color"
+      Color {
+        R: 0.00999999
+        G: 0.822979867
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bottom Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Offset Top"
+      Float: 0.40956679
+    }
+    Overrides {
+      Name: "bp:Color Offset Middle"
+      Float: 0.734075129
+    }
+    Overrides {
+      Name: "bp:Color Offset Bottom"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive"
+      Float: 12.5750904
+    }
+    Overrides {
+      Name: "bp:Border Edge Fade"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions U"
+      Float: 6
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Distance"
+      Float: 134
+    }
+    Overrides {
+      Name: "bp:Element Rotation Axis"
+      Enum {
+        Value: "mc:emcrotationaxis:2"
+      }
+    }
+    Overrides {
+      Name: "bp:Offset Rotation"
+      Float: 45
+    }
+    Overrides {
+      Name: "bp:Width +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Height +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Distance +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Random Seed Value"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Circle Thickness"
+      Float: 30.7548676
+    }
+    Overrides {
+      Name: "bp:Fade Start"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Softness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Initial Start Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Axis"
+      Enum {
+        Value: "mc:emcfadeaxisxy:29"
+      }
+    }
+    Overrides {
+      Name: "bp:Fade Point Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Fade Style"
+      Enum {
+        Value: "mc:emcfadestyle:30"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Shape"
+      Int: 9
+    }
+    Overrides {
+      Name: "bp:Element B Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator1"
+      }
+    }
+    Overrides {
+      Name: "bp:Element B Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Dual Texture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Alternate Blend"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element Blend"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Alpha Blending"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip U"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip V"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scroll Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Scroll Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Outline"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Outline Thickness"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "bp:Sort Priority"
+      Int: -10
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Speed"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Keystone Top"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Coloring Method"
+      Enum {
+        Value: "mc:emccoloringmethod:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Element Rotation Speed"
+      Float: 18.6479492
+    }
+    Overrides {
+      Name: "bp:Element Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Element Rotation Animation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Use Element Local Orientation"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Center Element Pivot"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Reset On Play"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Reset On Stop"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Element A Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator0"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4204935042848427516
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 13740054036556143703
+  Name: "MCG: Fantasy - Singular Element Outer Ring"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.350000083
+      Y: 0.350000083
+      Z: 0.350000083
+    }
+  }
+  ParentId: 3064987450868871983
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Information"
+      String: "See tool-tip for information. "
+    }
+    Overrides {
+      Name: "bp:Element Type"
+      Enum {
+        Value: "mc:emcshapes:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Top Color"
+      Color {
+        R: 0.85
+        B: 0.810595632
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Middle Color"
+      Color {
+        R: 1
+        G: 0.230000019
+        B: 0.2605955
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bottom Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Offset Top"
+      Float: 0.570502758
+    }
+    Overrides {
+      Name: "bp:Color Offset Middle"
+      Float: 0.757915854
+    }
+    Overrides {
+      Name: "bp:Color Offset Bottom"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive"
+      Float: 12.5750904
+    }
+    Overrides {
+      Name: "bp:Border Edge Fade"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions U"
+      Float: 6
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scale"
+      Float: 0.922573864
+    }
+    Overrides {
+      Name: "bp:Distance"
+      Float: 134
+    }
+    Overrides {
+      Name: "bp:Element Rotation Axis"
+      Enum {
+        Value: "mc:emcrotationaxis:2"
+      }
+    }
+    Overrides {
+      Name: "bp:Offset Rotation"
+      Float: 45
+    }
+    Overrides {
+      Name: "bp:Width +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Height +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Distance +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Random Seed Value"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Circle Thickness"
+      Float: -15.4791641
+    }
+    Overrides {
+      Name: "bp:Fade Start"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Softness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Initial Start Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Axis"
+      Enum {
+        Value: "mc:emcfadeaxisxy:29"
+      }
+    }
+    Overrides {
+      Name: "bp:Fade Point Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Fade Style"
+      Enum {
+        Value: "mc:emcfadestyle:30"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Element B Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator1"
+      }
+    }
+    Overrides {
+      Name: "bp:Element B Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Dual Texture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Alternate Blend"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element Blend"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Alpha Blending"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip U"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip V"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scroll Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Scroll Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Outline"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Outline Thickness"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "bp:Sort Priority"
+      Int: -10
+    }
+    Overrides {
+      Name: "bp:Shape Thickness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Speed"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Keystone"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Keystone Top"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Coloring Method"
+      Enum {
+        Value: "mc:emccoloringmethod:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Element Rotation Speed"
+      Float: 18.6479492
+    }
+    Overrides {
+      Name: "bp:Element Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Element Rotation Animation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Use Element Local Orientation"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Center Element Pivot"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Reset On Play"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Reset On Stop"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4204935042848427516
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 13063508612097309952
+  Name: "MCG: Fantasy - Singular Element Outer Ring Inner"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.350000083
+      Y: 0.350000083
+      Z: 0.350000083
+    }
+  }
+  ParentId: 3064987450868871983
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Information"
+      String: "See tool-tip for information. "
+    }
+    Overrides {
+      Name: "bp:Element Type"
+      Enum {
+        Value: "mc:emcshapes:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Top Color"
+      Color {
+        G: 0.231523171
+        B: 0.76
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Middle Color"
+      Color {
+        R: 0.00999999
+        G: 0.822979867
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bottom Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Offset Top"
+      Float: 0.570502758
+    }
+    Overrides {
+      Name: "bp:Color Offset Middle"
+      Float: 0.757915854
+    }
+    Overrides {
+      Name: "bp:Color Offset Bottom"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive"
+      Float: 12.5750904
+    }
+    Overrides {
+      Name: "bp:Border Edge Fade"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions U"
+      Float: 6
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scale"
+      Float: 0.922573864
+    }
+    Overrides {
+      Name: "bp:Distance"
+      Float: 134
+    }
+    Overrides {
+      Name: "bp:Element Rotation Axis"
+      Enum {
+        Value: "mc:emcrotationaxis:2"
+      }
+    }
+    Overrides {
+      Name: "bp:Offset Rotation"
+      Float: 45
+    }
+    Overrides {
+      Name: "bp:Width +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Height +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Distance +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Random Seed Value"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Circle Thickness"
+      Float: -15.4791641
+    }
+    Overrides {
+      Name: "bp:Fade Start"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Softness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Initial Start Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed"
+      Float: 0.296518564
+    }
+    Overrides {
+      Name: "bp:Fade Axis"
+      Enum {
+        Value: "mc:emcfadeaxisxy:29"
+      }
+    }
+    Overrides {
+      Name: "bp:Fade Point Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Fade Style"
+      Enum {
+        Value: "mc:emcfadestyle:30"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Shape"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Element B Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator1"
+      }
+    }
+    Overrides {
+      Name: "bp:Element B Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Dual Texture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Alternate Blend"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element Blend"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Alpha Blending"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip U"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip V"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scroll Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Scroll Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Outline"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Outline Thickness"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "bp:Sort Priority"
+      Int: -10
+    }
+    Overrides {
+      Name: "bp:Shape Thickness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Speed"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Keystone"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Keystone Top"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Coloring Method"
+      Enum {
+        Value: "mc:emccoloringmethod:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Element Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Element Rotation Animation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Use Element Local Orientation"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Center Element Pivot"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Reset On Play"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Reset On Stop"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4204935042848427516
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 4613642303990035036
+  Name: "MCG:Fantasy - Outer Small Circle Glyph"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -89.9999771
+    }
+    Scale {
+      X: 0.45923692
+      Y: 0.45923692
+      Z: 0.45923692
+    }
+  }
+  ParentId: 3064987450868871983
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Information"
+      String: "See tool-tip for information. "
+    }
+    Overrides {
+      Name: "bp:Element Type"
+      Enum {
+        Value: "mc:emcshapes:0"
+      }
+    }
+    Overrides {
+      Name: "bp:Top Color"
+      Color {
+        G: 0.097615622
+        B: 0.669999957
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Middle Color"
+      Color {
+        G: 0.624768257
+        B: 0.89
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bottom Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Offset Top"
+      Float: 0.570502758
+    }
+    Overrides {
+      Name: "bp:Color Offset Middle"
+      Float: 0.757915854
+    }
+    Overrides {
+      Name: "bp:Color Offset Bottom"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive"
+      Float: 36.4004745
+    }
+    Overrides {
+      Name: "bp:Border Edge Fade"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Count"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scale"
+      Float: 0.913076878
+    }
+    Overrides {
+      Name: "bp:Distance"
+      Float: 152.739609
+    }
+    Overrides {
+      Name: "bp:Element Rotation"
+      Float: -107.30751
+    }
+    Overrides {
+      Name: "bp:Element Rotation Axis"
+      Enum {
+        Value: "mc:emcrotationaxis:2"
+      }
+    }
+    Overrides {
+      Name: "bp:Offset Rotation"
+      Float: -0
+    }
+    Overrides {
+      Name: "bp:Width +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Height +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Distance +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Random Seed Value"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Circle Thickness"
+      Float: -15.4791641
+    }
+    Overrides {
+      Name: "bp:Fade Start"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Softness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Initial Start Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Axis"
+      Enum {
+        Value: "mc:emcfadeaxisxy:29"
+      }
+    }
+    Overrides {
+      Name: "bp:Fade Point Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Fade Style"
+      Enum {
+        Value: "mc:emcfadestyle:30"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator1"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Shape"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Element B Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator1"
+      }
+    }
+    Overrides {
+      Name: "bp:Element B Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Dual Texture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Alternate Blend"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element Blend"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Alpha Blending"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip U"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip V"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scroll Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Scroll Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Outline"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Outline Thickness"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "bp:Sort Priority"
+      Int: -10
+    }
+    Overrides {
+      Name: "bp:Shape Thickness"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Speed"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Keystone"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Keystone Top"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Coloring Method"
+      Enum {
+        Value: "mc:emccoloringmethod:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Element Rotation Speed"
+      Float: -10
+    }
+    Overrides {
+      Name: "bp:Element Rotation Update Rate"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Update Rate"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Element Rotation Animation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Use Element Local Orientation"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Center Element Pivot"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Reset On Play"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Reset On Stop"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4204935042848427516
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 16142718892801381898
+  Name: "MCG: Fantasy - Outer Small Circles Outer Rings"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -89.9999771
+    }
+    Scale {
+      X: 0.226561874
+      Y: 0.226561874
+      Z: 0.226561874
+    }
+  }
+  ParentId: 3064987450868871983
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Information"
+      String: "See tool-tip for information. "
+    }
+    Overrides {
+      Name: "bp:Element Type"
+      Enum {
+        Value: "mc:emcshapes:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Top Color"
+      Color {
+        R: 0.85
+        B: 0.810595632
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Middle Color"
+      Color {
+        R: 1
+        G: 0.230000019
+        B: 0.2605955
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bottom Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Offset Top"
+      Float: 0.570502758
+    }
+    Overrides {
+      Name: "bp:Color Offset Middle"
+      Float: 0.757915854
+    }
+    Overrides {
+      Name: "bp:Color Offset Bottom"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive"
+      Float: 12.5750904
+    }
+    Overrides {
+      Name: "bp:Border Edge Fade"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions U"
+      Float: 6
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Count"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scale"
+      Float: 0.922573864
+    }
+    Overrides {
+      Name: "bp:Distance"
+      Float: 302.78
+    }
+    Overrides {
+      Name: "bp:Element Rotation"
+      Float: 45
+    }
+    Overrides {
+      Name: "bp:Element Rotation Axis"
+      Enum {
+        Value: "mc:emcrotationaxis:2"
+      }
+    }
+    Overrides {
+      Name: "bp:Offset Rotation"
+      Float: -0
+    }
+    Overrides {
+      Name: "bp:Width +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Height +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Distance +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Random Seed Value"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Circle Thickness"
+      Float: -26.1871567
+    }
+    Overrides {
+      Name: "bp:Fade Start"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Softness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Initial Start Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Axis"
+      Enum {
+        Value: "mc:emcfadeaxisxy:29"
+      }
+    }
+    Overrides {
+      Name: "bp:Fade Point Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Fade Style"
+      Enum {
+        Value: "mc:emcfadestyle:30"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Element B Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator1"
+      }
+    }
+    Overrides {
+      Name: "bp:Element B Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Dual Texture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Alternate Blend"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element Blend"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Alpha Blending"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip U"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip V"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scroll Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Scroll Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Outline"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Outline Thickness"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "bp:Sort Priority"
+      Int: -10
+    }
+    Overrides {
+      Name: "bp:Shape Thickness"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Speed"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Keystone"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Keystone Top"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Coloring Method"
+      Enum {
+        Value: "mc:emccoloringmethod:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Element Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Element Rotation Animation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Use Element Local Orientation"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Center Element Pivot"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Reset On Play"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Reset On Stop"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4204935042848427516
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 6316798190875224572
+  Name: "MCG: Fantasy - Outer Small Circles Inner"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -89.9999695
+    }
+    Scale {
+      X: 0.226561874
+      Y: 0.226561874
+      Z: 0.226561874
+    }
+  }
+  ParentId: 3064987450868871983
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Information"
+      String: "See tool-tip for information. "
+    }
+    Overrides {
+      Name: "bp:Element Type"
+      Enum {
+        Value: "mc:emcshapes:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Top Color"
+      Color {
+        G: 0.231523171
+        B: 0.76
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Middle Color"
+      Color {
+        R: 0.00999999
+        G: 0.822980106
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bottom Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Offset Top"
+      Float: 0.570502758
+    }
+    Overrides {
+      Name: "bp:Color Offset Middle"
+      Float: 0.757915854
+    }
+    Overrides {
+      Name: "bp:Color Offset Bottom"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive"
+      Float: 12.5750904
+    }
+    Overrides {
+      Name: "bp:Border Edge Fade"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions U"
+      Float: 6
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Count"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Distance"
+      Float: 302.748169
+    }
+    Overrides {
+      Name: "bp:Element Rotation"
+      Float: 45
+    }
+    Overrides {
+      Name: "bp:Element Rotation Axis"
+      Enum {
+        Value: "mc:emcrotationaxis:2"
+      }
+    }
+    Overrides {
+      Name: "bp:Offset Rotation"
+      Float: -0
+    }
+    Overrides {
+      Name: "bp:Width +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Height +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Distance +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Random Seed Value"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Circle Thickness"
+      Float: -26.1871567
+    }
+    Overrides {
+      Name: "bp:Fade Start"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Softness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Initial Start Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed"
+      Float: 0.105117917
+    }
+    Overrides {
+      Name: "bp:Fade Axis"
+      Enum {
+        Value: "mc:emcfadeaxisxy:29"
+      }
+    }
+    Overrides {
+      Name: "bp:Fade Point Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Fade Style"
+      Enum {
+        Value: "mc:emcfadestyle:30"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Shape"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Element B Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator1"
+      }
+    }
+    Overrides {
+      Name: "bp:Element B Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Dual Texture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Alternate Blend"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element Blend"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Alpha Blending"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip U"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip V"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scroll Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Scroll Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Outline"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Outline Thickness"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "bp:Sort Priority"
+      Int: -10
+    }
+    Overrides {
+      Name: "bp:Shape Thickness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Speed"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Keystone"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Keystone Top"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Coloring Method"
+      Enum {
+        Value: "mc:emccoloringmethod:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Element Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Element Rotation Animation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Use Element Local Orientation"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Center Element Pivot"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Reset On Play"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Reset On Stop"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Scale"
+      Float: 0.913076878
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4204935042848427516
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 16953141226149833343
+  Name: "MCG: Fantasy - Outer Ring Decorative"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.1828264
+      Y: 1.1828264
+      Z: 1.1828264
+    }
+  }
+  ParentId: 3064987450868871983
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Information"
+      String: "See tool-tip for information. "
+    }
+    Overrides {
+      Name: "bp:Element Type"
+      Enum {
+        Value: "mc:emcshapes:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Top Color"
+      Color {
+        R: 0.85
+        B: 0.810595632
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Middle Color"
+      Color {
+        R: 1
+        G: 0.230000019
+        B: 0.2605955
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bottom Color"
+      Color {
+        R: 0.0768213421
+        B: 0.580000043
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Offset Top"
+      Float: 0.570502758
+    }
+    Overrides {
+      Name: "bp:Color Offset Middle"
+      Float: 0.757915854
+    }
+    Overrides {
+      Name: "bp:Color Offset Bottom"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive"
+      Float: 9.18570423
+    }
+    Overrides {
+      Name: "bp:Border Edge Fade"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions U"
+      Float: 12
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scale"
+      Float: 0.922573864
+    }
+    Overrides {
+      Name: "bp:Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation"
+      Float: 45
+    }
+    Overrides {
+      Name: "bp:Element Rotation Axis"
+      Enum {
+        Value: "mc:emcrotationaxis:2"
+      }
+    }
+    Overrides {
+      Name: "bp:Offset Rotation"
+      Float: -0
+    }
+    Overrides {
+      Name: "bp:Width +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Height +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Distance +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Random Seed Value"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Circle Thickness"
+      Float: -10.893528
+    }
+    Overrides {
+      Name: "bp:Fade Start"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Softness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Initial Start Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed"
+      Float: -0.06006
+    }
+    Overrides {
+      Name: "bp:Fade Axis"
+      Enum {
+        Value: "mc:emcfadeaxisxy:29"
+      }
+    }
+    Overrides {
+      Name: "bp:Fade Point Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Fade Style"
+      Enum {
+        Value: "mc:emcfadestyle:30"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Shape"
+      Int: 9
+    }
+    Overrides {
+      Name: "bp:Element B Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator1"
+      }
+    }
+    Overrides {
+      Name: "bp:Element B Shape"
+      Int: 8
+    }
+    Overrides {
+      Name: "bp:Dual Texture"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Alternate Blend"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element Blend"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Alpha Blending"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip U"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip V"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scroll Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Scroll Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset V"
+      Float: -0.122170269
+    }
+    Overrides {
+      Name: "bp:Element B Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Outline"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Outline Thickness"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "bp:Sort Priority"
+      Int: -10
+    }
+    Overrides {
+      Name: "bp:Shape Thickness"
+      Float: 0.341220826
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Keystone"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Keystone Top"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Coloring Method"
+      Enum {
+        Value: "mc:emccoloringmethod:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Element Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Element Rotation Animation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Use Element Local Orientation"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Center Element Pivot"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Reset On Play"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Reset On Stop"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4204935042848427516
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 15702800132505489260
+  Name: "MCG: Fantasy - Overlapping Rings"
+  Transform {
+    Location {
+      Z: -5.5346756
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.311270118
+      Y: 0.311270118
+      Z: 0.311270118
+    }
+  }
+  ParentId: 3064987450868871983
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Information"
+      String: "See tool-tip for information. "
+    }
+    Overrides {
+      Name: "bp:Element Type"
+      Enum {
+        Value: "mc:emcshapes:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Top Color"
+      Color {
+        G: 0.220397308
+        B: 0.52
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Middle Color"
+      Color {
+        R: 0.00999999
+        G: 0.763973415
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bottom Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Offset Top"
+      Float: 0.570502758
+    }
+    Overrides {
+      Name: "bp:Color Offset Middle"
+      Float: 0.757915854
+    }
+    Overrides {
+      Name: "bp:Color Offset Bottom"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive"
+      Float: 27.9270115
+    }
+    Overrides {
+      Name: "bp:Border Edge Fade"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Count"
+      Int: 6
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 1.31467223
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 1.07043719
+    }
+    Overrides {
+      Name: "bp:Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Distance"
+      Float: 120
+    }
+    Overrides {
+      Name: "bp:Element Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation Axis"
+      Enum {
+        Value: "mc:emcrotationaxis:2"
+      }
+    }
+    Overrides {
+      Name: "bp:Offset Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Width +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Height +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Distance +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Random Seed Value"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Circle Thickness"
+      Float: 14.2233124
+    }
+    Overrides {
+      Name: "bp:Fade Start"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Softness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Initial Start Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Axis"
+      Enum {
+        Value: "mc:emcfadeaxisxy:29"
+      }
+    }
+    Overrides {
+      Name: "bp:Fade Point Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Fade Style"
+      Enum {
+        Value: "mc:emcfadestyle:30"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Element B Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator1"
+      }
+    }
+    Overrides {
+      Name: "bp:Element B Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Dual Texture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Alternate Blend"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element Blend"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Alpha Blending"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip U"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip V"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scroll Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Scroll Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Outline"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Outline Thickness"
+      Float: 0.462839961
+    }
+    Overrides {
+      Name: "bp:Sort Priority"
+      Int: -10
+    }
+    Overrides {
+      Name: "bp:Shape Thickness"
+      Float: 0.605496347
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Speed"
+      Float: -8.717
+    }
+    Overrides {
+      Name: "bp:Keystone"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Keystone Top"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Coloring Method"
+      Enum {
+        Value: "mc:emccoloringmethod:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Element Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Element Rotation Animation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Use Element Local Orientation"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Center Element Pivot"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Reset On Play"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Reset On Stop"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4204935042848427516
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 12836916779231527744
+  Name: "MCG: Sci-Fi - Inner Glyphs"
+  Transform {
+    Location {
+      Z: -5.53467703
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.622540236
+      Y: 0.622540236
+      Z: 0.622540236
+    }
+  }
+  ParentId: 3064987450868871983
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Information"
+      String: "See tool-tip for information. "
+    }
+    Overrides {
+      Name: "bp:Element Type"
+      Enum {
+        Value: "mc:emcshapes:0"
+      }
+    }
+    Overrides {
+      Name: "bp:Top Color"
+      Color {
+        G: 0.220397308
+        B: 0.52
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Middle Color"
+      Color {
+        R: 0.00999999
+        G: 0.763973415
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bottom Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Offset Top"
+      Float: 0.570502758
+    }
+    Overrides {
+      Name: "bp:Color Offset Middle"
+      Float: 0.757915854
+    }
+    Overrides {
+      Name: "bp:Color Offset Bottom"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive"
+      Float: 27.0298214
+    }
+    Overrides {
+      Name: "bp:Border Edge Fade"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Count"
+      Int: 6
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 0.386578768
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 0.337731749
+    }
+    Overrides {
+      Name: "bp:Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Distance"
+      Float: 73.1432266
+    }
+    Overrides {
+      Name: "bp:Element Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation Axis"
+      Enum {
+        Value: "mc:emcrotationaxis:2"
+      }
+    }
+    Overrides {
+      Name: "bp:Offset Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Width +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Height +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Distance +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Random Seed Value"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Circle Thickness"
+      Float: 32.7697372
+    }
+    Overrides {
+      Name: "bp:Fade Start"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Softness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Initial Start Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Axis"
+      Enum {
+        Value: "mc:emcfadeaxisxy:29"
+      }
+    }
+    Overrides {
+      Name: "bp:Fade Point Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Fade Style"
+      Enum {
+        Value: "mc:emcfadestyle:30"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator1"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Shape"
+      Int: 7
+    }
+    Overrides {
+      Name: "bp:Element B Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator1"
+      }
+    }
+    Overrides {
+      Name: "bp:Element B Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Dual Texture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Alternate Blend"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element Blend"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Alpha Blending"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip U"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip V"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scroll Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Scroll Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Outline"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Outline Thickness"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "bp:Sort Priority"
+      Int: -10
+    }
+    Overrides {
+      Name: "bp:Shape Thickness"
+      Float: 0.45885244
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Speed"
+      Float: 6.56363916
+    }
+    Overrides {
+      Name: "bp:Keystone"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Keystone Top"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Coloring Method"
+      Enum {
+        Value: "mc:emccoloringmethod:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Element Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Element Rotation Animation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Use Element Local Orientation"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Center Element Pivot"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Reset On Play"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Reset On Stop"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 15696524381397938084
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 15767330265907232283
+  Name: "MCG: Fantasy - Outer Rings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3064987450868871983
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Information"
+      String: "See tool-tip for information. "
+    }
+    Overrides {
+      Name: "bp:Element Type"
+      Enum {
+        Value: "mc:emcshapes:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Top Color"
+      Color {
+        R: 0.85
+        B: 0.810595632
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Middle Color"
+      Color {
+        R: 1
+        G: 0.230000019
+        B: 0.2605955
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bottom Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Offset Top"
+      Float: 0.570502758
+    }
+    Overrides {
+      Name: "bp:Color Offset Middle"
+      Float: 0.757915854
+    }
+    Overrides {
+      Name: "bp:Color Offset Bottom"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive"
+      Float: 12.5750904
+    }
+    Overrides {
+      Name: "bp:Border Edge Fade"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions U"
+      Float: 6
+    }
+    Overrides {
+      Name: "bp:Element A Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scale"
+      Float: 0.922573864
+    }
+    Overrides {
+      Name: "bp:Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation"
+      Float: 45
+    }
+    Overrides {
+      Name: "bp:Element Rotation Axis"
+      Enum {
+        Value: "mc:emcrotationaxis:2"
+      }
+    }
+    Overrides {
+      Name: "bp:Offset Rotation"
+      Float: -0
+    }
+    Overrides {
+      Name: "bp:Width +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Height +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Distance +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation +/-"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Random Seed Value"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Circle Thickness"
+      Float: -15.4791641
+    }
+    Overrides {
+      Name: "bp:Fade Start"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Softness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Initial Start Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Axis"
+      Enum {
+        Value: "mc:emcfadeaxisxy:29"
+      }
+    }
+    Overrides {
+      Name: "bp:Fade Point Count"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Fade Style"
+      Enum {
+        Value: "mc:emcfadestyle:30"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Element A Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Element B Set"
+      Enum {
+        Value: "mc:emagiccircleselementtype:newenumerator1"
+      }
+    }
+    Overrides {
+      Name: "bp:Element B Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Dual Texture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Alternate Blend"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element Blend"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Alpha Blending"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip U"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Flip V"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions U"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Element B Repetitions V"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scroll Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Scroll Speed B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element A Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset U"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element B Offset V"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Outline"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Outline Thickness"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "bp:Sort Priority"
+      Int: -10
+    }
+    Overrides {
+      Name: "bp:Shape Thickness"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Keystone"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Keystone Top"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Coloring Method"
+      Enum {
+        Value: "mc:emccoloringmethod:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Element Rotation Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Element Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Circle Rotation Update Rate"
+      Float: 30
+    }
+    Overrides {
+      Name: "bp:Element Rotation Animation Axis"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Use Element Local Orientation"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Center Element Pivot"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Reset On Play"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Reset On Stop"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4204935042848427516
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 18309975574266712336
+  Name: "Treasure Ray Burst"
+  Transform {
+    Location {
+      X: -1.22314453
+      Y: -10.123291
+      Z: 9.85644531
+    }
+    Rotation {
+      Yaw: 3.25688781e-12
+    }
+    Scale {
+      X: 0.68240732
+      Y: 0.68240732
+      Z: 0.0310185123
+    }
+  }
+  ParentId: 9603051622199093603
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 0.933652461
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Volume Type"
+      Enum {
+        Value: "mc:evfxvolumetype:2"
+      }
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 0.0600000024
+        B: 0.0756664276
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 17365099617506282650
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
   Id: 18104644928490191707
   Name: "LevelUpCrown_Client"
   Transform {
@@ -3227,6 +8399,18 @@ Objects {
       Name: "cs:WorldText"
       ObjectReference {
         SelfId: 13774298975841066628
+      }
+    }
+    Overrides {
+      Name: "cs:MintBeginVFX"
+      ObjectReference {
+        SelfId: 18309975574266712336
+      }
+    }
+    Overrides {
+      Name: "cs:MagicCircle"
+      ObjectReference {
+        SelfId: 3064987450868871983
       }
     }
     Overrides {
@@ -3275,6 +8459,18 @@ Objects {
       Name: "cs:ExplosionKitFireRingVFX"
       ObjectReference {
         SelfId: 3102779145316669727
+      }
+    }
+    Overrides {
+      Name: "cs:CustomProgressBarRoot"
+      ObjectReference {
+        SelfId: 3906021298985486441
+      }
+    }
+    Overrides {
+      Name: "cs:CustomProgressBarScript"
+      ObjectReference {
+        SelfId: 5050298967462967475
       }
     }
   }

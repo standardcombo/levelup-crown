@@ -1,4 +1,13 @@
 Assets {
+  Id: 18340030779138157511
+  Name: "BG Gradient 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_020"
+  }
+}
+Assets {
   Id: 17773072837660370393
   Name: "Explosion Kit Fire Ring VFX"
   PlatformAssetType: 8
@@ -8,12 +17,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17365099617506282650
+  Name: "Treasure Ray Burst"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Treasure_Rays"
+  }
+}
+Assets {
   Id: 16077824162186241922
   Name: "Sci-fi Panel 2x3m Triangle"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_panel_2x3m_triangle_001"
+  }
+}
+Assets {
+  Id: 15696524381397938084
+  Name: "Magic Circle Generator Advanced: Scifi VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_magic_circle_generator_scifi"
   }
 }
 Assets {
@@ -134,6 +161,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4204935042848427516
+  Name: "Magic Circle Generator Advanced: Fantasy VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_magic_circle_generator_fantasy"
+  }
+}
+Assets {
   Id: 4162622250971573770
   Name: "Ring - Beveled Thin"
   PlatformAssetType: 1
@@ -149,6 +185,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_magic_light_heal_revive_spell_cast_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 3360604785460599381
+  Name: "Hand Cast VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_cast_hands"
   }
 }
 Assets {
@@ -176,5 +221,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gem_round_polished_001"
+  }
+}
+Assets {
+  Id: 161941836213610146
+  Name: "Level Up VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Level_Up"
   }
 }
