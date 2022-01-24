@@ -1,6 +1,6 @@
 Assets {
-  Id: 345038425027161141
-  Name: "LevelUpCrown_Server"
+  Id: 3762571337285505467
+  Name: "SetAddressChatCmd"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {

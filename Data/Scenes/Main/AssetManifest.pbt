@@ -44,6 +44,19 @@ Assets {
   }
 }
 Assets {
+  Id: 12972227599248413112
+  Name: "Server"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "1f3310f3147e4b50acea60db9c2aabff"
+      Type {
+        Value: "mc:enetreferencetype:concurrentpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 11515840070784317904
   Name: "Skylight"
   PlatformAssetType: 6

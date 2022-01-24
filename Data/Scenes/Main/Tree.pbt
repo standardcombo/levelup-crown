@@ -20,6 +20,7 @@ Objects {
   ChildIds: 3577820707942694197
   ChildIds: 2179295960746014626
   ChildIds: 11039921681813037118
+  ChildIds: 9127931101833469437
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -35,6 +36,41 @@ Objects {
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 9127931101833469437
+  Name: "APICreatorServer - SetAddressChatCmd"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11433680952212960662
+      value {
+        Overrides {
+          Name: "Name"
+          String: "APICreatorServer - SetAddressChatCmd"
+        }
+        Overrides {
+          Name: "cs:Server"
+          NetReference {
+            Key: "1f3310f3147e4b50acea60db9c2aabff"
+            Type {
+              Value: "mc:enetreferencetype:concurrentpersistence"
+            }
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3699075246718151972
+    }
   }
 }
 Objects {
