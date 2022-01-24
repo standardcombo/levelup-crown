@@ -3,6 +3,7 @@ local UIBUTTON = script:GetCustomProperty("UIButton"):WaitForObject()
 local WORLD_TEXT = script:GetCustomProperty("WorldText"):WaitForObject()
 local LEVEL_UP_VFX = script:GetCustomProperty("LevelUpVFX"):WaitForObject()
 local LEVEL_UP_SFX = script:GetCustomProperty("LevelUpSFX"):WaitForObject()
+local BASE_GEO = script:GetCustomProperty("BaseGeo"):WaitForObject()
 local POINT_LIGHT = script:GetCustomProperty("PointLight"):WaitForObject()
 local EMBER_VOLUME_VFX = script:GetCustomProperty("EmberVolumeVFX"):WaitForObject()
 local CANDLE_FLAME_VFX = script:GetCustomProperty("CandleFlameVFX"):WaitForObject()
@@ -17,7 +18,19 @@ UI.SetCanCursorInteractWithUI(true)
 
 
 function Tick(deltaTime)
-	local level = tonumber(WORLD_TEXT.text)
+	local level = 0
+	if WORLD_TEXT.text ~= "" then
+		level = tonumber(WORLD_TEXT.text)
+	end
+	
+	if level == 0 then
+		UIBUTTON.text = "Mint"
+		BASE_GEO.visibility = Visibility.FORCE_OFF
+	else
+		UIBUTTON.text = "Level Up"
+		BASE_GEO.visibility = Visibility.INHERIT
+	end
+	
 	if level <= 1 then
 		POINT_LIGHT.visibility = Visibility.FORCE_OFF
 	else

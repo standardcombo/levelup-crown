@@ -24,6 +24,7 @@ Objects {
   ChildIds: 12603199545797867998
   ChildIds: 18222648659962546548
   ChildIds: 3102779145316669727
+  ChildIds: 13029969363082405764
   ChildIds: 9553249474592504020
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -210,515 +211,13 @@ Objects {
   }
 }
 Objects {
-  Id: 3102779145316669727
-  Name: "Explosion Kit Fire Ring VFX"
-  Transform {
-    Location {
-      X: 5.79345703
-      Y: -14.480835
-      Z: -6.10351562e-05
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.814163208
-      Y: 0.814163208
-      Z: 0.814163208
-    }
-  }
-  ParentId: 9603051622199093603
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Looping"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Life"
-      Float: 2
-    }
-    Overrides {
-      Name: "bp:Size Min"
-      Float: 2
-    }
-    Overrides {
-      Name: "bp:Size Max"
-      Float: 2
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 17773072837660370393
-    }
-    TeamSettings {
-    }
-    Vfx {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 18222648659962546548
-  Name: "Energy Charge Up Hold VFX"
-  Transform {
-    Location {
-      X: -1.83789062
-      Y: -8.6633
-      Z: 33.7523804
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.707436562
-      Y: 0.707436562
-      Z: 0.707436562
-    }
-  }
-  ParentId: 9603051622199093603
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Hot Spot Color"
-      Color {
-        R: 0.99
-        G: 0.96377486
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Outer Core Edge Color"
-      Color {
-        R: 15
-        G: 14.887991
-        B: 8.2794342
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Inner Core Color"
-      Color {
-        R: 1
-        G: 0.266666651
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Outer Core Color"
-      Color {
-        R: 0.973445
-        G: 0.4380503
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Ring Color"
-      Color {
-        R: 0.973445
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 5843715792897576707
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 12603199545797867998
-  Name: "Candle Flame VFX"
-  Transform {
-    Location {
-      X: -7.12548828
-      Y: 30.0621643
-      Z: 22.8158569
-    }
-    Rotation {
-      Yaw: -19.8146954
-    }
-    Scale {
-      X: 4.36170435
-      Y: 4.36170435
-      Z: 4.36170435
-    }
-  }
-  ParentId: 9603051622199093603
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9199751096616988864
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 3608908768960183995
-  Name: "Ember Volume VFX"
-  Transform {
-    Location {
-      X: -0.149414062
-      Y: -15.9070435
-      Z: 9.82104492
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.837908208
-      Y: 0.837908208
-      Z: 0.837908208
-    }
-  }
-  ParentId: 9603051622199093603
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Volume Type"
-      Enum {
-        Value: "mc:evfxvolumetype:1"
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 10690357982165483245
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 1880605331748314078
-  Name: "Point Light"
-  Transform {
-    Location {
-      X: -9.24658203
-      Y: 39.6433411
-      Z: 10.8934326
-    }
-    Rotation {
-      Yaw: 12.6812372
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9603051622199093603
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Light {
-    Intensity: 0.2
-    Color {
-      R: 0.97
-      A: 1
-    }
-    VolumetricIntensity: 5
-    TeamSettings {
-    }
-    Light {
-      Temperature: 6500
-      LocalLight {
-        AttenuationRadius: 1000
-        PointLight {
-          SourceRadius: 20
-          SoftSourceRadius: 20
-          FallOffExponent: 8
-        }
-      }
-      MaxDrawDistance: 5000
-      MaxDistanceFadeRange: 1000
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 16873066999626663814
-  Name: "Magic Light Heal Revive Choir Spell Cast 01 SFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: 3.25688781e-12
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9603051622199093603
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 3762730359405328354
-    }
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 12831382475690333090
-  Name: "Level Up VFX"
-  Transform {
-    Location {
-      X: 4.59228516
-      Y: -13.1155396
-      Z: 6.10351562e-05
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9603051622199093603
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 5763047637146735949
-    }
-    TeamSettings {
-    }
-    Vfx {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 18104644928490191707
-  Name: "LevelUpCrown_Client"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9603051622199093603
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:UIButton"
-      ObjectReference {
-        SelfId: 9967403353841173645
-      }
-    }
-    Overrides {
-      Name: "cs:WorldText"
-      ObjectReference {
-        SelfId: 13774298975841066628
-      }
-    }
-    Overrides {
-      Name: "cs:LevelUpVFX"
-      ObjectReference {
-        SelfId: 12831382475690333090
-      }
-    }
-    Overrides {
-      Name: "cs:LevelUpSFX"
-      ObjectReference {
-        SelfId: 16873066999626663814
-      }
-    }
-    Overrides {
-      Name: "cs:PointLight"
-      ObjectReference {
-        SelfId: 1880605331748314078
-      }
-    }
-    Overrides {
-      Name: "cs:EmberVolumeVFX"
-      ObjectReference {
-        SelfId: 3608908768960183995
-      }
-    }
-    Overrides {
-      Name: "cs:CandleFlameVFX"
-      ObjectReference {
-        SelfId: 12603199545797867998
-      }
-    }
-    Overrides {
-      Name: "cs:EnergyChargeUpHoldVFX"
-      ObjectReference {
-        SelfId: 18222648659962546548
-      }
-    }
-    Overrides {
-      Name: "cs:ExplosionKitFireRingVFX"
-      ObjectReference {
-        SelfId: 3102779145316669727
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15800532115852506605
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
   Id: 13029969363082405764
   Name: "Harlequin01\'s Generic Crown 01"
   Transform {
     Location {
     }
     Rotation {
-      Yaw: -77.4121552
+      Yaw: -77.4121704
     }
     Scale {
       X: 0.819830954
@@ -726,7 +225,7 @@ Objects {
       Z: 0.819830954
     }
   }
-  ParentId: 11039921681813037118
+  ParentId: 9603051622199093603
   ChildIds: 11685643810076779256
   ChildIds: 1874838217826430310
   ChildIds: 12090558059057897118
@@ -776,7 +275,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3293,6 +2792,514 @@ Objects {
   }
 }
 Objects {
+  Id: 3102779145316669727
+  Name: "Explosion Kit Fire Ring VFX"
+  Transform {
+    Location {
+      X: 5.79345703
+      Y: -14.480835
+      Z: -6.10351562e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.814163208
+      Y: 0.814163208
+      Z: 0.814163208
+    }
+  }
+  ParentId: 9603051622199093603
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Looping"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Size Min"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Size Max"
+      Float: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 17773072837660370393
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 18222648659962546548
+  Name: "Energy Charge Up Hold VFX"
+  Transform {
+    Location {
+      X: -1.83789062
+      Y: -8.6633
+      Z: 33.7523804
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.707436562
+      Y: 0.707436562
+      Z: 0.707436562
+    }
+  }
+  ParentId: 9603051622199093603
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Hot Spot Color"
+      Color {
+        R: 0.99
+        G: 0.96377486
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Outer Core Edge Color"
+      Color {
+        R: 15
+        G: 14.887991
+        B: 8.2794342
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Inner Core Color"
+      Color {
+        R: 1
+        G: 0.266666651
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Outer Core Color"
+      Color {
+        R: 0.973445
+        G: 0.4380503
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Ring Color"
+      Color {
+        R: 0.973445
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 5843715792897576707
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 12603199545797867998
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: -7.12548828
+      Y: 30.0621643
+      Z: 22.8158569
+    }
+    Rotation {
+      Yaw: -19.8146954
+    }
+    Scale {
+      X: 4.36170435
+      Y: 4.36170435
+      Z: 4.36170435
+    }
+  }
+  ParentId: 9603051622199093603
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 3608908768960183995
+  Name: "Ember Volume VFX"
+  Transform {
+    Location {
+      X: -0.149414062
+      Y: -15.9070435
+      Z: 9.82104492
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.837908208
+      Y: 0.837908208
+      Z: 0.837908208
+    }
+  }
+  ParentId: 9603051622199093603
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Volume Type"
+      Enum {
+        Value: "mc:evfxvolumetype:1"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10690357982165483245
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 1880605331748314078
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -9.24658203
+      Y: 39.6433411
+      Z: 10.8934326
+    }
+    Rotation {
+      Yaw: 12.6812372
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9603051622199093603
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Light {
+    Intensity: 0.2
+    Color {
+      R: 0.97
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 16873066999626663814
+  Name: "Magic Light Heal Revive Choir Spell Cast 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 3.25688781e-12
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9603051622199093603
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 3762730359405328354
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 12831382475690333090
+  Name: "Level Up VFX"
+  Transform {
+    Location {
+      X: 4.59228516
+      Y: -13.1155396
+      Z: 6.10351562e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9603051622199093603
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 5763047637146735949
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 18104644928490191707
+  Name: "LevelUpCrown_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9603051622199093603
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:UIButton"
+      ObjectReference {
+        SelfId: 9967403353841173645
+      }
+    }
+    Overrides {
+      Name: "cs:WorldText"
+      ObjectReference {
+        SelfId: 13774298975841066628
+      }
+    }
+    Overrides {
+      Name: "cs:LevelUpVFX"
+      ObjectReference {
+        SelfId: 12831382475690333090
+      }
+    }
+    Overrides {
+      Name: "cs:LevelUpSFX"
+      ObjectReference {
+        SelfId: 16873066999626663814
+      }
+    }
+    Overrides {
+      Name: "cs:BaseGeo"
+      ObjectReference {
+        SelfId: 13029969363082405764
+      }
+    }
+    Overrides {
+      Name: "cs:PointLight"
+      ObjectReference {
+        SelfId: 1880605331748314078
+      }
+    }
+    Overrides {
+      Name: "cs:EmberVolumeVFX"
+      ObjectReference {
+        SelfId: 3608908768960183995
+      }
+    }
+    Overrides {
+      Name: "cs:CandleFlameVFX"
+      ObjectReference {
+        SelfId: 12603199545797867998
+      }
+    }
+    Overrides {
+      Name: "cs:EnergyChargeUpHoldVFX"
+      ObjectReference {
+        SelfId: 18222648659962546548
+      }
+    }
+    Overrides {
+      Name: "cs:ExplosionKitFireRingVFX"
+      ObjectReference {
+        SelfId: 3102779145316669727
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15800532115852506605
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
   Id: 13774298975841066628
   Name: "World Text"
   Transform {
@@ -3325,7 +3332,6 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Text {
-    Text: "1"
     FontAsset {
       Id: 9284565452160622782
     }
