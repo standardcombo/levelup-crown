@@ -14,6 +14,10 @@ local EXPLOSION_KIT_FIRE_RING_VFX = script:GetCustomProperty("ExplosionKitFireRi
 local CUSTOM_PROGRESS_BAR_ROOT = script:GetCustomProperty("CustomProgressBarRoot"):WaitForObject()
 local CUSTOM_PROGRESS_BAR_SCRIPT = script:GetCustomProperty("CustomProgressBarScript"):WaitForObject()
 
+local SERVER_SCRIPT = script:GetCustomProperty("ServerScript"):WaitForObject()
+local MINT_DURATION = SERVER_SCRIPT:GetCustomProperty("MintDuration")
+local LEVEL_UP_DURATION = SERVER_SCRIPT:GetCustomProperty("LevelUpDuration")
+
 local MAX_INTENSITY = POINT_LIGHT.intensity
 local FREQUENCY = 2
 
@@ -21,34 +25,91 @@ UI.SetCursorVisible(true)
 UI.SetCanCursorInteractWithUI(true)
 
 local level = 0
-local isWaitingMint = false
-local elapsedMintTime = 0
+local prevLevel = 0
+
+local STATE_WAIT_FOR_ADDRESS = 1
+local STATE_WAIT_FOR_MINT = 2
+local STATE_MINTING = 3
+local STATE_IDLE = 4
+local STATE_LEVELING_UP = 5
+
+local currentState = STATE_WAIT_FOR_ADDRESS
+local elapsedTime = 0
+
+
+function SetState(newState)
+	if currentState == STATE_MINTING then
+		MAGIC_CIRCLE.visibility = Visibility.FORCE_OFF
+	end
+	
+	if newState == STATE_WAIT_FOR_ADDRESS then
+		UIBUTTON.text = "Connect Wallet"
+		UIBUTTON.visibility = Visibility.INHERIT
+		
+	elseif newState == STATE_WAIT_FOR_MINT then
+		UIBUTTON.text = "Mint"
+		UIBUTTON.visibility = Visibility.INHERIT
+		
+	elseif newState == STATE_MINTING then
+		UIBUTTON.visibility = Visibility.FORCE_OFF
+		CUSTOM_PROGRESS_BAR_ROOT.visibility = Visibility.INHERIT
+		
+		MINT_BEGIN_VFX:Play()
+		LEVEL_UP_SFX:Play()
+		
+		Task.Wait(0.2)
+		MAGIC_CIRCLE.visibility = Visibility.INHERIT
+	
+	elseif newState == STATE_IDLE then
+		UIBUTTON.text = "Level Up"
+		UIBUTTON.visibility = Visibility.INHERIT
+		CUSTOM_PROGRESS_BAR_ROOT.visibility = Visibility.FORCE_OFF
+		PlayLevelUpVFX()
+		
+	elseif newState == STATE_LEVELING_UP then
+		UIBUTTON.visibility = Visibility.FORCE_OFF
+		CUSTOM_PROGRESS_BAR_ROOT.visibility = Visibility.INHERIT
+	end
+	
+	currentState = newState
+	elapsedTime = 0
+end
 
 
 function Tick(deltaTime)
-	if isWaitingMint then
-		elapsedMintTime = elapsedMintTime + deltaTime
-		CUSTOM_PROGRESS_BAR_SCRIPT.context.SetPercent(elapsedMintTime / 50)
+	elapsedTime = elapsedTime + deltaTime
+	
+	local level = SERVER_SCRIPT:GetCustomProperty("Level")
+	
+	if currentState == STATE_MINTING then
+		if level > 0 then
+			SetState(STATE_IDLE)
+		else
+			CUSTOM_PROGRESS_BAR_SCRIPT.context.SetPercent(elapsedTime / MINT_DURATION)
+		end
+		
+	elseif currentState == STATE_LEVELING_UP then
+		if level > prevLevel then
+			SetState(STATE_IDLE)
+		else
+			CUSTOM_PROGRESS_BAR_SCRIPT.context.SetPercent(elapsedTime / LEVEL_UP_DURATION)
+		end
 	end
 	
-	if WORLD_TEXT.text ~= "" then
-		if isWaitingMint then
-			isWaitingMint = false
-			MAGIC_CIRCLE.visibility = Visibility.FORCE_OFF
-			UIBUTTON.visibility = Visibility.INHERIT
-			CUSTOM_PROGRESS_BAR_ROOT.visibility = Visibility.FORCE_OFF
-			PlayLevelUpVFX()
-			Task.Wait(0.1)
-		end
-		level = tonumber(WORLD_TEXT.text)
+	if prevLevel ~= level then
+		prevLevel = level
+		
+		Task.Wait(0.4)
 	end
+		
+	-- Update Crown Visuals
 	
 	if level == 0 then
-		UIBUTTON.text = "Mint"
 		BASE_GEO.visibility = Visibility.FORCE_OFF
+		WORLD_TEXT.text = ""
 	else
-		UIBUTTON.text = "Level Up"
 		BASE_GEO.visibility = Visibility.INHERIT
+		WORLD_TEXT.text = tostring(level)
 	end
 	
 	if level <= 1 then
@@ -83,31 +144,30 @@ function Tick(deltaTime)
 	end
 end
 
-Events.Connect("CancelMint", function()
-	isWaitingMint = false
-	MAGIC_CIRCLE.visibility = Visibility.FORCE_OFF
-	UIBUTTON.visibility = Visibility.INHERIT
-	CUSTOM_PROGRESS_BAR_ROOT.visibility = Visibility.FORCE_OFF
+
+Events.Connect("AddressAdded", function()
+	if currentState == STATE_WAIT_FOR_ADDRESS then
+		SetState(STATE_WAIT_FOR_MINT)
+	end
 end)
 
+
+Events.Connect("CancelMint", function()
+	SetState(STATE_WAIT_FOR_MINT)
+end)
+
+
 UIBUTTON.clickedEvent:Connect(function()
-	if level == 0 then
+	if currentState == STATE_WAIT_FOR_ADDRESS then
+		UI.PrintToScreen("Type /eth <address>")
+		
+	elseif currentState == STATE_WAIT_FOR_MINT then
+		SetState(STATE_MINTING)
 		Events.BroadcastToServer("Mint")
 		
-		isWaitingMint = true
-		
-		UIBUTTON.visibility = Visibility.FORCE_OFF
-		CUSTOM_PROGRESS_BAR_ROOT.visibility = Visibility.INHERIT
-		
-		MINT_BEGIN_VFX:Play()
-		LEVEL_UP_SFX:Play()
-		
-		Task.Wait(0.2)
-		MAGIC_CIRCLE.visibility = Visibility.INHERIT
-	else
+	elseif currentState == STATE_IDLE then
+		SetState(STATE_LEVELING_UP)
 		Events.BroadcastToServer("LevelUp")
-		
-		PlayLevelUpVFX()
 	end
 end)
 function PlayLevelUpVFX()
@@ -118,6 +178,8 @@ function PlayLevelUpVFX()
 	LEVEL_UP_SFX:Play()
 end
 
+
+-- DEV cheats:
 Game.GetLocalPlayer().bindingPressedEvent:Connect(function(_, action)
 	-- Hide UI by pressing zero key
 	if action == "ability_extra_0" then

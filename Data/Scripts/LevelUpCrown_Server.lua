@@ -1,19 +1,26 @@
 
-local WORLD_TEXT = script:GetCustomProperty("WorldText"):WaitForObject()
 local APICREATOR_SERVER = require(script:GetCustomProperty("APICreatorServer"))
 
-local MINT_WAIT_DURATION = 50
+local MINT_WAIT_DURATION = script:GetCustomProperty("MintDuration")
+local LEVEL_UP_DURATION = script:GetCustomProperty("LevelUpDuration")
 
-local level = 0
+
+function GetLevel()
+	return script:GetCustomProperty("Level")
+end
+
+function SetLevel(value)
+	script:SetCustomProperty("Level", value)
+end
+
 
 Events.ConnectForPlayer("Mint", function(player)
-	if level == 0 then
+	if GetLevel() == 0 then
 		success = false
 		
 		Task.Spawn(function()
 			if success then
-				level = 1
-				WORLD_TEXT.text = tostring(level)
+				SetLevel(1)
 			else
 				Events.BroadcastToAllPlayers("CancelMint")
 			end
@@ -25,16 +32,21 @@ Events.ConnectForPlayer("Mint", function(player)
 	end
 end)
 
+
 Events.ConnectForPlayer("LevelUp", function(player)
-	level = level + 1
-	WORLD_TEXT.text = tostring(level)
+	Task.Spawn(function()
+		SetLevel(GetLevel() + 1)
+	end,
+	LEVEL_UP_DURATION)
+	
 	APICREATOR_SERVER.SendPacket(player, "LevelUp")
 end)
 
+
 Events.ConnectForPlayer("Reset", function(player)
-	if level > 0 then
-		level = 0
-		WORLD_TEXT.text = ""
+	if GetLevel() > 1 then
+		SetLevel(1)
 		APICREATOR_SERVER.SendPacket(player, "Reset")
 	end
 end)
+

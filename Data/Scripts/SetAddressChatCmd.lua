@@ -18,6 +18,8 @@ function CmdChecker(speaker, params)
 		end
 		Chat.BroadcastMessage("Your Ethereum Address has been linked to your account "..speaker.name.."("..address..").")
 		APICREATOR_SERVER.SetPlayerAddress(speaker, address)
+		
+		Events.BroadcastToPlayer(speaker, "AddressAdded")
 	end
 end
 

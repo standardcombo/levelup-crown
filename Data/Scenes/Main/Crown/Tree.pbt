@@ -17,6 +17,7 @@ Objects {
   }
   ParentId: 11039921681813037118
   ChildIds: 18104644928490191707
+  ChildIds: 13774298975841066628
   ChildIds: 18309975574266712336
   ChildIds: 3064987450868871983
   ChildIds: 12831382475690333090
@@ -1153,7 +1154,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 281
+    Width: 310
     Height: 94
     UIY: -170.380676
     RenderTransformPivot {
@@ -1162,7 +1163,7 @@ Objects {
       }
     }
     Button {
-      Label: "Level Up"
+      Label: "Connect Wallet"
       FontColor {
         R: 1
         G: 0.984900653
@@ -1296,7 +1297,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8374,6 +8375,58 @@ Objects {
   }
 }
 Objects {
+  Id: 13774298975841066628
+  Name: "World Text"
+  Transform {
+    Location {
+      X: -7.67041
+      Y: 32.6617432
+      Z: 9.85907
+    }
+    Rotation {
+      Yaw: 103.570213
+    }
+    Scale {
+      X: 0.963516712
+      Y: 0.963516712
+      Z: 0.963516712
+    }
+  }
+  ParentId: 9603051622199093603
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Text {
+    FontAsset {
+      Id: 9284565452160622782
+    }
+    Color {
+      R: 1
+      G: 0.38
+      B: 0.38
+      A: 1
+    }
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
   Id: 18104644928490191707
   Name: "LevelUpCrown_Client"
   Transform {
@@ -8473,6 +8526,12 @@ Objects {
         SelfId: 5050298967462967475
       }
     }
+    Overrides {
+      Name: "cs:ServerScript"
+      ObjectReference {
+        SelfId: 16515798503404244766
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8489,59 +8548,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 15800532115852506605
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 13774298975841066628
-  Name: "World Text"
-  Transform {
-    Location {
-      X: -7.6704278
-      Y: 32.6617393
-      Z: 9.85907
-    }
-    Rotation {
-      Yaw: 103.570221
-    }
-    Scale {
-      X: 0.963516712
-      Y: 0.963516712
-      Z: 0.963516712
-    }
-  }
-  ParentId: 11039921681813037118
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Text {
-    FontAsset {
-      Id: 9284565452160622782
-    }
-    Color {
-      R: 1
-      G: 0.38
-      B: 0.38
-      A: 1
-    }
-    HorizontalAlignment {
-      Value: "mc:ecoretexthorizontalalign:center"
-    }
-    VerticalAlignment {
-      Value: "mc:ecoretextverticalalign:center"
     }
   }
   NetworkRelevanceDistance {
@@ -8566,12 +8572,23 @@ Objects {
   ParentId: 11039921681813037118
   UnregisteredParameters {
     Overrides {
-      Name: "cs:WorldText"
-      ObjectReference {
-        SelfId: 13774298975841066628
-      }
+      Name: "cs:MintDuration"
+      Int: 50
+    }
+    Overrides {
+      Name: "cs:LevelUpDuration"
+      Int: 30
+    }
+    Overrides {
+      Name: "cs:Level"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:Level:isrep"
+      Bool: true
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
