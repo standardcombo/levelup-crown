@@ -29,6 +29,7 @@ $Env:ETHERSCAN_API_KEY = 'Y26...TVK'
 ### Deploy the contract on Rinkeby
 
 ```bash
+npm install
 npx hardhat run .\scripts\deploy.js --network rinkeby
 ```
 

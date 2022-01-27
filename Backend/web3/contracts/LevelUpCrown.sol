@@ -32,7 +32,7 @@ contract LevelUpCrown is ERC721 {
 
   // A mapping from an address => the NFTs tokenId. Gives me an ez way
   // to store the owner of the NFT and reference it later.
-  mapping(string => uint256) public nftHolders;
+  mapping(address => uint256) public nftHolders;
 
   constructor()
     ERC721("LevelUpCrowns", "CROWN")
@@ -50,7 +50,7 @@ contract LevelUpCrown is ERC721 {
     _tokenIds.increment();
   }
 
-  function levelUp(string memory _address) public {
+  function levelUp(address _address) public {
     require(owner == msg.sender, "Error: tried to levelUp a crown from a non-authorized address");
 
     uint256 nftTokenIdOfPlayer = nftHolders[_address];
@@ -64,7 +64,7 @@ contract LevelUpCrown is ERC721 {
     crown.level = crown.level + 1;
   }
 
-  function reset(string memory _address) public {
+  function reset(address _address) public {
     require(owner == msg.sender, "Error: tried to levelUp a crown from a non-authorized address");
 
     uint256 nftTokenIdOfPlayer = nftHolders[_address];
@@ -73,49 +73,17 @@ contract LevelUpCrown is ERC721 {
     crown.level = 1;
   }
 
-  function parseAddr(string memory _a) internal pure returns (address _parsedAddress) {
-      bytes memory tmp = bytes(_a);
-      uint160 iaddr = 0;
-      uint160 b1;
-      uint160 b2;
-      for (uint i = 2; i < 2 + 2 * 20; i += 2) {
-          iaddr *= 256;
-          b1 = uint160(uint8(tmp[i]));
-          b2 = uint160(uint8(tmp[i + 1]));
-          if ((b1 >= 97) && (b1 <= 102)) {
-              b1 -= 87;
-          } else if ((b1 >= 65) && (b1 <= 70)) {
-              b1 -= 55;
-          } else if ((b1 >= 48) && (b1 <= 57)) {
-              b1 -= 48;
-          }
-          if ((b2 >= 97) && (b2 <= 102)) {
-              b2 -= 87;
-          } else if ((b2 >= 65) && (b2 <= 70)) {
-              b2 -= 55;
-          } else if ((b2 >= 48) && (b2 <= 57)) {
-              b2 -= 48;
-          }
-          iaddr += (b1 * 16 + b2);
-      }
-      return address(iaddr);
-  }
-
-  function mint(string memory _address) external {
+  function mint(address _address) external {
     uint256 newItemId = _tokenIds.current();
-    _safeMint(parseAddr(_address), newItemId);
+    _safeMint(_address, newItemId);
 
     nftHolderAttributes[newItemId] = CrownAttributes({
       crownIndex: newItemId,
       level: 1
     });
-
     console.log("Minted NFT w/ tokenId %s", newItemId);
     
-    // Keep an easy way to see who owns what NFT.
     nftHolders[_address] = newItemId;
-
-    // Increment the tokenId for the next person that uses it.
     _tokenIds.increment();
   }
 
